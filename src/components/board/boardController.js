@@ -45,7 +45,7 @@ module.exports = function boardController($scope){
       (vm.board[3]===currentPlayer&&vm.board[6]===currentPlayer&&vm.board[8]===currentPlayer) ||
       //diagonal
       (vm.board[0]===currentPlayer&&vm.board[4]===currentPlayer&&vm.board[8]===currentPlayer) ||
-      (vm.board[3]===currentPlayer&&vm.board[4]===currentPlayer&&vm.board[6]===currentPlayer)
+      (vm.board[2]===currentPlayer&&vm.board[4]===currentPlayer&&vm.board[6]===currentPlayer)
     ){
       console.log('p'+currentPlayer+' wins');
       vm.winner = vm.players[vm.current];
